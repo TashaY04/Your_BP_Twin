@@ -1,154 +1,166 @@
-# Hypertension Digital Twin
+🩺 Digital Twin for Hypertension Treatment Recommendation
 
-A personalized hypertension simulation and drug recommendation system with:
-- ensemble ML-based medication ranking
-- AI-generated personalized health guidance
-- 4-week blood pressure trajectory simulation
-- interactive what-if intervention modeling
+An AI-powered Healthcare Digital Twin platform that simulates patient treatment outcomes and recommends personalized hypertension treatment strategies using Machine Learning, Synthetic Data Generation, and Predictive Analytics.
 
-## Tech Stack
+Overview
 
-- Frontend: React + Vite + Framer Motion
-- Backend: Flask + XGBoost + RandomForest + GradientBoosting
-- AI Tips: Gemini API (with structured personalized fallback)
+Healthcare professionals often face challenges when making treatment decisions for patients with varying medical conditions and limited historical data.
 
-## Core Features
+This project introduces a Digital Twin Framework for hypertension management, where a virtual representation of a patient is created and used to simulate treatment responses before real-world implementation.
 
-### 1. Personalized Drug Recommendation
-- Predicts top medication classes from patient profile
-- Filters recommendations against reported allergies
-- Returns top ranked options with confidence and explanation
+The system leverages machine learning models and synthetic patient generation techniques to improve treatment recommendations and support clinical decision-making.
 
-### 2. Digital Twin Simulation
-- Simulates weekly BP progression (Week 0 to Week 4)
-- Outputs systolic/diastolic trajectory + risk stage per week
-- Compares trajectories across recommended drug options
+Key Features
 
-### 3. What-If Modeling
-Interactive intervention engine with:
-- dosage multiplier
-- exercise level
-- sodium reduction (%)
-- salt intake (mg/day)
-- medication adherence (%)
-- stress intervention (%)
-- sleep duration and sleep quality
-- weight change (kg)
-- medication switch (force a selected drug class)
+✅ Patient Treatment Recommendation System
 
-### 4. AI Insights Page
-- Dedicated `AI Insights` view (separate from Summary)
-- 5 personalized guidance factors:
-  1. Weight/BMI target
-  2. Dietary measures
-  3. Medication measures
-  4. Workout measures
-  5. Special measures (smoking/alcohol or pregnancy, with stress yoga guidance)
+✅ Digital Twin-Based Outcome Simulation
 
-### 5. Input Validation & Safety Rules
-Validated on frontend and backend:
-- male cannot be pregnant
-- age range: 13-100
-- height range: 120-220 cm
-- weight range: 35-250 kg
-- systolic range: 80-260
-- diastolic range: 40-160
-- diastolic must be lower than systolic
+✅ Synthetic Patient Data Generation using GANs
 
-## Project Structure
+✅ Ensemble Machine Learning Models
 
-```text
-Hypertension/
-├── backend/
-│   ├── app.py
-│   ├── config.py
-│   ├── data_loader.py
-│   ├── model.py
-│   ├── train.py
-│   ├── requirements.txt
-│   └── models/
-└── frontend/
-    ├── package.json
-    ├── vite.config.js
-    ├── index.html
-    └── src/
-        ├── App.jsx
-        ├── App.css
-        ├── index.css
-        ├── main.jsx
-        ├── components/
-        │   ├── Avatar.jsx
-        │   └── Avatar.css
-        └── pages/
-            ├── WelcomePage.jsx
-            ├── WelcomePage.css
-            ├── AssessmentPage.jsx
-            ├── AssessmentPage.css
-            ├── ResultsPage.jsx
-            └── ResultsPage.css
-```
+✅ Interactive Web Dashboard
 
-## Setup
+✅ Research-Oriented Healthcare AI Framework
 
-### Backend
+Problem Statement
 
-```bash
-cd backend
-pip3 install -r requirements.txt
-python3 train.py
-python3 app.py
-```
+Hypertension treatment outcomes can vary significantly across patients due to factors such as:
 
-Backend runs at: `http://localhost:5000`
+Age
+Lifestyle
+Medical History
+Comorbidities
+Medication Response
 
-### Frontend
+Traditional machine learning systems often struggle when dealing with:
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+Rare patient conditions
+Imbalanced datasets
+Limited clinical samples
 
-Frontend runs at: `http://localhost:5173`
+This project addresses these challenges through Digital Twin technology and synthetic data augmentation.
 
-## API Endpoints
+System Architecture
+Patient Data
+      │
+      ▼
+Data Preprocessing
+      │
+      ▼
+GAN-based Synthetic Data Generation
+      │
+      ▼
+Enhanced Dataset
+      │
+      ▼
+Ensemble Learning Models
+(XGBoost + Random Forest + Gradient Boosting)
+      │
+      ▼
+Treatment Recommendation Engine
+      │
+      ▼
+Digital Twin Simulation
+      │
+      ▼
+Outcome Prediction Dashboard
+Tech Stack
+Frontend
+React.js
+Backend
+Flask
+Machine Learning
+XGBoost
+Random Forest
+Gradient Boosting
+Scikit-Learn
+Deep Learning
+GAN (Generative Adversarial Network)
+Data Processing
+Pandas
+NumPy
+Visualization
+Matplotlib
+Seaborn
+Machine Learning Pipeline
+1. Data Collection
 
-### `POST /api/predict`
-Main prediction endpoint.
+Clinical hypertension dataset containing:
 
-Returns:
-- recommendations
-- AI tips
-- simulation trajectories
-- patient summary
-- disclaimer
+Patient demographics
+Blood pressure metrics
+Medical history
+Treatment information
+2. Data Preprocessing
+Missing value handling
+Feature engineering
+Data normalization
+Outlier detection
+3. Synthetic Data Generation
 
-### `POST /api/what-if`
-Counterfactual scenario simulation endpoint.
+GANs were trained to generate realistic synthetic patient records for rare and underrepresented cases.
 
-Input:
-- `patient_data`
-- `scenario` interventions
+Benefits:
 
-Returns:
-- reranked recommendations
-- updated week-4 risk summary
-- updated trajectories and comparisons
-- scenario-applied echo
+Reduced class imbalance
+Improved model generalization
+Enhanced robustness
+4. Model Training
 
-### `GET /api/health`
-Model/service health check.
+Ensemble learning approach using:
 
-## Author Details :
-Tanisha - Osmania University
+XGBoost
+Random Forest
+Gradient Boosting
+5. Outcome Simulation
 
-## Notes
+The Digital Twin predicts probable treatment outcomes for a given patient profile before intervention.
 
-- Restart backend after code changes in `backend/app.py`.
-- If models are missing, run `python3 train.py`.
-- AI tips gracefully fall back to deterministic personalized rules when Gemini is unavailable.
+Results
+Metric	Value
+Dataset Size	7000+ Records
+Accuracy	95.6%
+Models Used	3 Ensemble Models
+Synthetic Data	GAN Generated
+Deployment	Flask + React
+Sample Workflow
+User enters patient information.
+System creates a digital representation of the patient.
+Ensemble model predicts treatment outcomes.
+Digital Twin simulates potential responses.
+Recommended treatment strategy is displayed.
+Research Contribution
 
-## Disclaimer
+This project contributes to the growing field of Digital Twin Healthcare Systems by integrating:
 
-This system is for educational and decision-support use only.
-Clinical decisions must be made by qualified healthcare professionals.
+Predictive Analytics
+Synthetic Data Generation
+Clinical Decision Support
+Treatment Outcome Simulation
+
+Research Paper Status:
+
+📄 Under Review at a Scopus-Indexed Journal
+
+Future Enhancements
+Real-time patient monitoring integration
+Wearable device support
+Reinforcement Learning-based treatment optimization
+Explainable AI (XAI) module
+Multi-disease Digital Twin framework
+
+git clone https://github.com/yourusername/digital-twin-hypertension.git
+
+cd digital-twin-hypertension
+
+pip install -r requirements.txt
+
+python app.py
+
+Authors
+
+Musti Tanisha Yadav
+
+Computer Science Engineer | Machine Learning Enthusiast
