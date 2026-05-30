@@ -47,20 +47,20 @@ This project addresses these challenges through Digital Twin technology and synt
 ### Workflow
 
 Patient Data
-⬇
+     ⬇
 Data Preprocessing
-⬇
+     ⬇
 GAN-based Synthetic Data Generation
-⬇
+     ⬇
 Enhanced Dataset
-⬇
+     ⬇
 Ensemble Learning Models
 (XGBoost + Random Forest + Gradient Boosting)
-⬇
+     ⬇
 Treatment Recommendation Engine
-⬇
+     ⬇
 Digital Twin Simulation
-⬇
+     ⬇
 Outcome Prediction Dashboard
 
 ---
