@@ -118,7 +118,7 @@ Gradient Boosting
 5. Outcome Simulation
 
 SYSTEM ARCHITECTURE :
-<img width="1571" height="857" alt="8" src="https://github.com/user-attachments/assets/e3dae9d6-adf8-44ad-a290-9412e2347c9e" /><img width="1400" height="1800" alt="project_flow" src="https://github.com/user-attachments/assets/005d17a0-f070-4130-a03e-5e12db034108" />
+<img width="1400" height="1800" alt="project_flow" src="https://github.com/user-attachments/assets/005d17a0-f070-4130-a03e-5e12db034108" />
 
 The Digital Twin predicts probable treatment outcomes for a given patient profile before intervention.
 
