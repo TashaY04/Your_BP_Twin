@@ -1,15 +1,4 @@
-<img width="1571" height="857" alt="8" src="https://github.com/user-attachments/assets/e3dae9d6-adf8-44ad-a290-9412e2347c9e" /><img width="1400" height="1800" alt="project_flow" src="https://github.com/user-attachments/assets/005d17a0-f070-4130-a03e-5e12db034108" />
-[BPT_Poster.pdf](https://github.com/user-attachments/files/28420405/BPT_Poster.pdf)
-<img width="1572" height="847" alt="10" src="https://github.com/user-attachments/assets/960100dd-af47-4a6d-9393-2a46d0cd3525" />
-<img width="1578" height="800" alt="9" src="https://github.com/user-attachments/assets/6aa75776-45dd-48b7-8402-05aa182b410f" />
 
-<img width="1571" height="806" alt="7" src="https://github.com/user-attachments/assets/6205fa72-966d-4954-8546-21541a06e6e5" />
-<img width="1569" height="852" alt="6" src="https://github.com/user-attachments/assets/776485f1-77de-4dcf-8eda-7d09c0df49da" />
-<img width="1574" height="841" alt="5" src="https://github.com/user-attachments/assets/3d61e3af-1e92-4252-8eeb-8025be1f42ab" />
-<img width="1570" height="858" alt="4" src="https://github.com/user-attachments/assets/490f53b2-2731-4d93-aeb2-beda642dd6dd" />
-<img width="1564" height="854" alt="3" src="https://github.com/user-attachments/assets/2fe23784-b4cf-4cbf-be7a-17051cd7de7d" />
-<img width="1581" height="863" alt="2" src="https://github.com/user-attachments/assets/9df0bd7c-3958-4ade-a7c3-08bd03989b18" />
-<img width="1596" height="850" alt="1" src="https://github.com/user-attachments/assets/3ef0ada5-f46c-4066-b0ac-183a784cd123" />
 🩺 Digital Twin for Hypertension Treatment Recommendation
 
 An AI-powered Healthcare Digital Twin platform that simulates patient treatment outcomes and recommends personalized hypertension treatment strategies using Machine Learning, Synthetic Data Generation, and Predictive Analytics.
@@ -128,9 +117,25 @@ Random Forest
 Gradient Boosting
 5. Outcome Simulation
 
+SYSTEM ARCHITECTURE :
+<img width="1571" height="857" alt="8" src="https://github.com/user-attachments/assets/e3dae9d6-adf8-44ad-a290-9412e2347c9e" /><img width="1400" height="1800" alt="project_flow" src="https://github.com/user-attachments/assets/005d17a0-f070-4130-a03e-5e12db034108" />
+
 The Digital Twin predicts probable treatment outcomes for a given patient profile before intervention.
 
-Results
+[BPT_Poster.pdf](https://github.com/user-attachments/files/28420405/BPT_Poster.pdf)
+
+
+RESULTS :
+<img width="1596" height="850" alt="1" src="https://github.com/user-attachments/assets/3ef0ada5-f46c-4066-b0ac-183a784cd123" />
+<img width="1581" height="863" alt="2" src="https://github.com/user-attachments/assets/9df0bd7c-3958-4ade-a7c3-08bd03989b18" />
+<img width="1564" height="854" alt="3" src="https://github.com/user-attachments/assets/2fe23784-b4cf-4cbf-be7a-17051cd7de7d" />
+<img width="1570" height="858" alt="4" src="https://github.com/user-attachments/assets/490f53b2-2731-4d93-aeb2-beda642dd6dd" />
+<img width="1574" height="841" alt="5" src="https://github.com/user-attachments/assets/3d61e3af-1e92-4252-8eeb-8025be1f42ab" />
+<img width="1569" height="852" alt="6" src="https://github.com/user-attachments/assets/776485f1-77de-4dcf-8eda-7d09c0df49da" />
+<img width="1571" height="806" alt="7" src="https://github.com/user-attachments/assets/6205fa72-966d-4954-8546-21541a06e6e5" />
+<img width="1578" height="800" alt="9" src="https://github.com/user-attachments/assets/6aa75776-45dd-48b7-8402-05aa182b410f" />
+<img width="1572" height="847" alt="10" src="https://github.com/user-attachments/assets/960100dd-af47-4a6d-9393-2a46d0cd3525" />
+
 Metric	Value
 Dataset Size	7000+ Records
 Accuracy	95.6%
